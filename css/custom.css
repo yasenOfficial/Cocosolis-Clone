@@ -1,0 +1,500 @@
+﻿html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#app {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    min-height: 100vh;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* -----------------------------------------------------------
+   0) GLOBAL RESET FOR HEADER
+----------------------------------------------------------- */
+#mainHeaderDesktop,
+#mainHeaderDesktop_container,
+#mainHeaderNav,
+#mainHeaderNav nav ul,
+#mainHeaderNav nav ul li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* -----------------------------------------------------------
+   1) BLACK FRIDAY TICKER
+----------------------------------------------------------- */
+#headerTicker {
+    height: 32px;
+    background-color: #daa48a;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#headerTicker .splide__track {
+    overflow: hidden;
+}
+
+#headerTicker .splide__list {
+    display: flex;
+    gap: 4rem;
+}
+
+#headerTicker .splide__slide {
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+
+/* -----------------------------------------------------------
+   2) MAIN HEADER (LOGO + NAV + ICONS)
+----------------------------------------------------------- */
+#mainHeaderDesktop {
+    background: white;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+#mainHeaderDesktop_container {
+    max-width: 1280px;
+    height: 96px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: auto;
+    padding: 0 50px;
+}
+
+/* LOGO */
+#mainLogoLink img {
+    height: 50px;
+    width: auto;
+}
+
+
+/* -----------------------------------------------------------
+   NAVIGATION
+----------------------------------------------------------- */
+#mainHeaderNav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#mainHeaderNav nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 38px;
+}
+
+/* Navigation links */
+#mainHeaderNav nav ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #816c65;
+    letter-spacing: .3px;
+
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.25s ease;
+}
+
+#mainHeaderNav nav ul li a:hover {
+    border-bottom-color: #816c65;
+}
+
+
+/* -----------------------------------------------------------
+   SUBMENU & HAMBURGER (a.more element)
+----------------------------------------------------------- */
+#mainHeader_navigation li {
+    position: relative;
+}
+
+/* Style a.more as hamburger icon */
+a.more {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none !important;
+    padding: 0;
+}
+
+/* Create hamburger icon with pseudo-element */
+a.more::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #816c65;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 -6px 0 #816c65, 0 6px 0 #816c65;
+    transition: 0.25s ease;
+}
+
+a.more:hover::before {
+    opacity: 0.7;
+}
+
+/* Submenu styles */
+.mainHeader_navigation_subMenu {
+    display: none !important;
+
+    position: absolute;
+    right: 0;
+    top: 32px;
+
+    background: white;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    min-width: 260px;
+    z-index: 2000;
+    
+    /* Hidden state properties */
+    height: 0;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+/* Show submenu on hover */
+#mainHeader_navigation li:hover > .mainHeader_navigation_subMenu {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+    
+    /* Visible state properties */
+    height: auto !important;
+    padding: 15px 20px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Submenu items */
+.mainHeader_navigation_subMenu_item {
+    font-size: 14px;
+    color: #816c65;
+    display: block;
+    padding: 6px 0;
+    transition: opacity 0.25s ease;
+    text-decoration: none;
+}
+
+.mainHeader_navigation_subMenu_item:hover {
+    opacity: 0.7;
+}
+
+
+/* -----------------------------------------------------------
+   HEADER ICONS (search / cart / profile)
+----------------------------------------------------------- */
+.headerBtnHolder {
+    margin-left: 15px;
+}
+
+.headerBtnItem {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #816c65;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.25s ease;
+}
+
+.headerBtnItem:hover {
+    opacity: 0.7;
+}
+
+.headerBtnItem img {
+    width: 20px;
+    height: 20px;
+}
+
+#mainHeaderNav_cart_btn {
+    position: relative;
+}
+
+#mainHeaderNav_cart_btn_quantity {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+
+    width: 18px;
+    height: 18px;
+
+    background: #daa48a;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -----------------------------------------------------------
+   3) CATEGORY STRIP (SECOND BAR)
+----------------------------------------------------------- */
+#mainHeaderDesktop_bottomRow {
+    width: 100%;
+    background: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+}
+
+#mainHeaderDesktop_bottomRow_categoryList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 42px;
+    padding: 12px 0;
+}
+
+.mainHeaderDesktop_bottomRow_categoryList_link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #816c65;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.mainHeaderDesktop_bottomRow_categoryList_link:hover {
+    opacity: 0.7;
+}
+
+
+/* -----------------------------------------------------------
+   4) RESPONSIVE
+----------------------------------------------------------- */
+@media (max-width: 1024px) {
+    /* Adjust header container layout for mobile */
+    #mainHeaderDesktop_container {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    /* Logo in the center - absolute positioning */
+    #mainLogoLink {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+    
+    /* Navigation container - make it take full width */
+    #mainHeaderNav {
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Search on the left within nav */
+    #mainHeaderNav_search {
+        order: 1;
+    }
+    
+    /* Nav (hamburger) on the left after search */
+    #mainHeaderNav nav {
+        order: 2;
+    }
+    
+    /* Cart in the middle-right */
+    #mainHeaderNav_cart {
+        order: 3;
+        margin-left: auto;
+    }
+    
+    /* Profile on the far right */
+    #mainHeaderNav_profile {
+        order: 4;
+    }
+    
+    /* Hide desktop navigation links but keep a.more */
+    #mainHeaderNav nav ul li:not(:last-child) {
+        display: none;
+    }
+    
+    /* Show only a.more on mobile */
+    #mainHeaderNav nav ul li:last-child {
+        display: block;
+    }
+    
+    /* Make a.more larger and more accessible on mobile */
+    a.more {
+        width: 32px;
+        height: 32px;
+    }
+    
+    a.more::before {
+        width: 22px;
+    }
+    
+    /* Adjust submenu position for mobile */
+    .mainHeader_navigation_subMenu {
+        left: 0;
+        right: auto;
+        top: 40px;
+        min-width: 280px;
+    }
+    
+    /* Hide category strip on mobile */
+    #mainHeaderDesktop_bottomRow {
+        display: none;
+    }
+    
+    /* Make icons smaller on mobile */
+    .headerBtnItem img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .headerBtnHolder {
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    #mainHeaderDesktop_container {
+        padding: 0 10px;
+        height: 70px;
+    }
+    
+    #mainLogoLink img {
+        height: 28px;
+        max-width: 110px;
+    }
+    
+    #headerTicker {
+        font-size: 11px;
+        height: 32px;
+        padding: 0 10px;
+    }
+    
+    #headerTicker .splide__slide {
+        font-size: 11px;
+    }
+    
+    /* Reduce gap further on smaller screens */
+    #mainHeaderNav {
+        gap: 6px;
+    }
+    
+    .headerBtnHolder {
+        margin-left: 4px;
+    }
+    
+    /* Make hamburger and search smaller */
+    a.more {
+        width: 28px;
+        height: 28px;
+    }
+    
+    a.more::before {
+        width: 18px;
+        box-shadow: 0 -5px 0 #816c65, 0 5px 0 #816c65;
+    }
+}
+
+@media (max-width: 414px) {
+    #mainHeaderDesktop_container {
+        padding: 0 8px;
+        height: 65px;
+    }
+    
+    #mainLogoLink img {
+        height: 24px;
+        max-width: 100px;
+    }
+    
+    /* Even smaller icons for very small screens */
+    .headerBtnItem img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    a.more {
+        width: 26px;
+        height: 26px;
+    }
+    
+    a.more::before {
+        width: 16px;
+        box-shadow: 0 -5px 0 #816c65, 0 5px 0 #816c65;
+    }
+    
+    #mainHeaderNav {
+        gap: 4px;
+    }
+    
+    .headerBtnHolder {
+        margin-left: 3px;
+    }
+    
+    /* Hide "Профил" text on very small screens */
+    #mainHeaderNav_profile_btn {
+        font-size: 0;
+    }
+    
+    #mainHeaderNav_profile_btn img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    #mainHeaderDesktop_container {
+        padding: 0 6px;
+    }
+    
+    #mainLogoLink img {
+        height: 22px;
+        max-width: 90px;
+    }
+}

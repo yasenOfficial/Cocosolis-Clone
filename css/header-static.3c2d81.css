@@ -1,0 +1,22 @@
+#headerTop {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: #daa48a;
+    background-color: rgba(218, 164, 138, var(--tw-bg-opacity));
+    font-size: .85rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
+@media (min-width:768px) {
+    #headerTop {
+        font-size: 15px
+    }
+}

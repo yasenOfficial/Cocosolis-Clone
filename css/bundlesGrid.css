@@ -70,6 +70,7 @@
     flex-direction: column;
     background: #f5e8e0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .bundles_singleProduct.singleProduct:hover {
@@ -168,6 +169,10 @@
 .singleProduct_listing_priceHolder {
     padding: 0 15px 15px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .singleProduct_listing_price {
@@ -191,22 +196,24 @@
 
 /* Omnibus Icon (info icon) */
 .singleProduct_omnibusIcon_mobile {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: #daa48a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: #daa48a;
     color: white;
     border-radius: 50%;
-    font-size: 11px;
-    line-height: 16px;
-    text-align: center;
-    cursor: help;
-    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
-.singleProduct_omnibusIcon_mobile::after {
-    content: 'i';
-    font-weight: 700;
+.singleProduct_omnibusIcon_mobile::before {
+    content: "i";
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
 }
 
 /* -----------------------------------------------------------
@@ -294,8 +301,8 @@
     }
 
     .productListing_section_productsContainer[extended="true"] {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .singleProduct_listing_iconsContainer {
@@ -315,6 +322,10 @@
     .singleProduct_listing_category {
         font-size: 14px;
         margin-bottom: 6px;
+    }
+
+    .singleProduct_listing_type {
+        font-size: 12px;
     }
 
     .singleProduct_listing_description {
@@ -358,7 +369,8 @@
     }
 
     .productListing_section_productsContainer[extended="true"] {
-        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .singleProduct_listing_iconsContainer {
@@ -379,8 +391,13 @@
         font-size: 13px;
     }
 
-    .singleProduct_listing_description {
+    .singleProduct_listing_type {
         font-size: 11px;
+    }
+
+    .singleProduct_listing_description {
+        font-size: 10px;
+        line-height: 1.5;
     }
 
     .singleProduct_listing_priceHolder {
@@ -393,6 +410,12 @@
 
     .singleProduct_listing_price_regularPrice {
         font-size: 12px;
+    }
+
+    .singleProduct_omnibusIcon_mobile {
+        width: 16px;
+        height: 16px;
+        font-size: 11px;
     }
 
     .cocosolisAddToCartButton {

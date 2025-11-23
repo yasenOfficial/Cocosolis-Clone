@@ -1,0 +1,404 @@
+/* -----------------------------------------------------------
+   BUNDLES GRID SECTION
+----------------------------------------------------------- */
+
+/* Bundles section with beige background */
+#bundles.productListing_section {
+    background-color: #fbf1eb;
+    width: 100%;
+    padding: 60px 0;
+}
+
+/* Other category sections with white background */
+.productListing_section {
+    background-color: white;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.productListing_section_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Category Header */
+.productListing_categoryDescription {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.productListing_categoryDescription h2 {
+    font-size: clamp(24px, 3.4vw, 45px);
+    font-weight: 300;
+    color: #816c65;
+    margin: 0;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 1.1em;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.productListing_categoryDescription p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Products Container */
+.productListing_section_productsContainer {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.productListing_section_productsContainer[extended="true"] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* -----------------------------------------------------------
+   SINGLE PRODUCT CARD
+----------------------------------------------------------- */
+
+.bundles_singleProduct.singleProduct {
+    display: flex;
+    flex-direction: column;
+    background: #f5e8e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bundles_singleProduct.singleProduct:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Link */
+.singleProduct_listing_link {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product Header */
+.singleProduct_listing_header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Discount Badge */
+.singleProduct_listing_iconsContainer {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+
+.singleProduct_listing_iconsContainer_percentageDiscount {
+    background: #3d3d3d;
+    color: white;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Product Image */
+.singleProduct_listing_image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Product Info */
+.singleProduct_listing_infos {
+    padding: 20px 15px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.singleProduct_listing_category {
+    font-size: 16px;
+    font-weight: 700;
+    color: #816c65;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleProduct_listing_type {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 10px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleProduct_listing_description {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleProduct_listing_description strong {
+    font-weight: 600;
+    color: #816c65;
+}
+
+/* -----------------------------------------------------------
+   PRICE SECTION
+----------------------------------------------------------- */
+
+.singleProduct_listing_priceHolder {
+    padding: 0 15px 15px;
+    text-align: center;
+}
+
+.singleProduct_listing_price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #816c65;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.singleProduct_listing_price_regularPrice {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Omnibus Icon (info icon) */
+.singleProduct_omnibusIcon_mobile {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #daa48a;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    cursor: help;
+    margin-left: 5px;
+}
+
+.singleProduct_omnibusIcon_mobile::after {
+    content: 'i';
+    font-weight: 700;
+}
+
+/* -----------------------------------------------------------
+   ADD TO CART BUTTON
+----------------------------------------------------------- */
+
+.cocosolisAddToCartButton {
+    background: #a89589;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    display: block;
+    margin: 0 15px 15px;
+}
+
+.cocosolisAddToCartButton:hover {
+    background: #96836f;
+    transform: translateY(-2px);
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .productListing_section {
+        padding: 50px 0;
+    }
+
+    .productListing_section_container {
+        padding: 0 30px;
+    }
+
+    .productListing_categoryDescription {
+        margin-bottom: 40px;
+    }
+
+    .productListing_section_productsContainer[extended="true"] {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .singleProduct_listing_category {
+        font-size: 15px;
+    }
+
+    .singleProduct_listing_description {
+        font-size: 12px;
+    }
+
+    .singleProduct_listing_price {
+        font-size: 16px;
+    }
+
+    .cocosolisAddToCartButton {
+        font-size: 13px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .productListing_section {
+        padding: 40px 0;
+    }
+
+    .productListing_section_container {
+        padding: 0 20px;
+    }
+
+    .productListing_categoryDescription {
+        margin-bottom: 35px;
+    }
+
+    .productListing_categoryDescription p {
+        font-size: 14px;
+    }
+
+    .productListing_section_productsContainer[extended="true"] {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .singleProduct_listing_iconsContainer {
+        top: 12px;
+        left: 12px;
+    }
+
+    .singleProduct_listing_iconsContainer_percentageDiscount {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .singleProduct_listing_infos {
+        padding: 15px 12px;
+    }
+
+    .singleProduct_listing_category {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .singleProduct_listing_description {
+        font-size: 11px;
+    }
+
+    .singleProduct_listing_priceHolder {
+        padding: 0 12px 12px;
+    }
+
+    .singleProduct_listing_price {
+        font-size: 15px;
+    }
+
+    .singleProduct_listing_price_regularPrice {
+        font-size: 13px;
+    }
+
+    .cocosolisAddToCartButton {
+        margin: 0 12px 12px;
+        font-size: 12px;
+        padding: 11px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productListing_section {
+        padding: 30px 0;
+    }
+
+    .productListing_section_container {
+        padding: 0 15px;
+    }
+
+    .productListing_categoryDescription {
+        margin-bottom: 30px;
+    }
+
+    .productListing_categoryDescription p {
+        font-size: 13px;
+    }
+
+    .productListing_section_productsContainer[extended="true"] {
+        gap: 25px;
+    }
+
+    .singleProduct_listing_iconsContainer {
+        top: 10px;
+        left: 10px;
+    }
+
+    .singleProduct_listing_iconsContainer_percentageDiscount {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .singleProduct_listing_infos {
+        padding: 12px 10px;
+    }
+
+    .singleProduct_listing_category {
+        font-size: 13px;
+    }
+
+    .singleProduct_listing_description {
+        font-size: 11px;
+    }
+
+    .singleProduct_listing_priceHolder {
+        padding: 0 10px 10px;
+    }
+
+    .singleProduct_listing_price {
+        font-size: 14px;
+    }
+
+    .singleProduct_listing_price_regularPrice {
+        font-size: 12px;
+    }
+
+    .cocosolisAddToCartButton {
+        margin: 0 10px 10px;
+        font-size: 11px;
+        padding: 10px 20px;
+        letter-spacing: 0.5px;
+    }
+}

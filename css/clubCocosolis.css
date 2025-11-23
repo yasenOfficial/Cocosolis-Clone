@@ -1,0 +1,11 @@
+.loyaltyStickyBar{
+    display: none !important;
+}
+
+.loyaltyStickyBar_opened{
+    display: none !important;
+}
+
+#backToTop{
+    display: none !important;
+}

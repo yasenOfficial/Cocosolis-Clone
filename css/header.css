@@ -16,9 +16,7 @@
     box-shadow: none !important;
 }
 
-/* -----------------------------------------------------------
-   0) GLOBAL RESET FOR HEADER
------------------------------------------------------------ */
+/* GLOBAL RESET FOR HEADER */
 #mainHeaderDesktop,
 #mainHeaderDesktop_container,
 #mainHeaderNav,
@@ -31,9 +29,7 @@
 }
 
 
-/* -----------------------------------------------------------
-   1) BLACK FRIDAY TICKER
------------------------------------------------------------ */
+/* BLACK FRIDAY TICKER */
 #headerTicker {
     height: 32px;
     background-color: #373737;
@@ -66,9 +62,7 @@
 }
 
 
-/* -----------------------------------------------------------
-   2) MAIN HEADER (LOGO + NAV + ICONS)
------------------------------------------------------------ */
+/*  MAIN HEADER (LOGO + NAV + ICONS) */
 #mainHeaderDesktop {
     background: white;
     border-bottom: 1px solid #eee;
@@ -94,9 +88,7 @@
 }
 
 
-/* -----------------------------------------------------------
-   NAVIGATION
------------------------------------------------------------ */
+/* NAVIGATION */
 #mainHeaderNav {
     display: flex;
     align-items: center;
@@ -128,14 +120,12 @@
 }
 
 
-/* -----------------------------------------------------------
-   SUBMENU & HAMBURGER (a.more element)
------------------------------------------------------------ */
+/* SUBMENU & HAMBURGER (a.more element) */
 #mainHeader_navigation li {
     position: relative;
 }
 
-/* Style a.more as hamburger icon */
+
 a.more {
     width: 24px;
     height: 24px;
@@ -217,9 +207,7 @@ a.more:hover::before {
 }
 
 
-/* -----------------------------------------------------------
-   HEADER ICONS (search / cart / profile)
------------------------------------------------------------ */
+/* NAV ICONS */
 .headerBtnHolder {
     margin-left: 15px;
 }
@@ -272,9 +260,7 @@ a.more:hover::before {
 }
 
 
-/* -----------------------------------------------------------
-   3) CATEGORY STRIP (SECOND BAR)
------------------------------------------------------------ */
+/* CATEGORY STRIP (SECOND BAR) */
 #mainHeaderDesktop_bottomRow {
     width: 100%;
     background: white;
@@ -306,11 +292,8 @@ a.more:hover::before {
 }
 
 
-/* -----------------------------------------------------------
-   4) RESPONSIVE
------------------------------------------------------------ */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
-    /* Adjust header container layout for mobile */
     #mainHeaderDesktop_container {
         padding: 0 20px;
         display: flex;
@@ -326,7 +309,6 @@ a.more:hover::before {
         z-index: 5;
     }
     
-    /* Navigation container - make it take full width */
     #mainHeaderNav {
         display: flex;
         gap: 10px;
@@ -363,12 +345,10 @@ a.more:hover::before {
         display: none;
     }
     
-    /* Show only a.more on mobile */
     #mainHeaderNav nav ul li:last-child {
         display: block;
     }
     
-    /* Make a.more larger and more accessible on mobile */
     a.more {
         width: 32px;
         height: 32px;
@@ -386,12 +366,10 @@ a.more:hover::before {
         min-width: 280px;
     }
     
-    /* Hide category strip on mobile */
     #mainHeaderDesktop_bottomRow {
         display: none;
     }
     
-    /* Make icons smaller on mobile */
     .headerBtnItem img {
         width: 18px;
         height: 18px;
@@ -401,7 +379,6 @@ a.more:hover::before {
         margin-left: 8px;
     }
     
-    /* Cart quantity badge - overlap more */
     #mainHeaderNav_cart_btn_quantity {
         top: -6px;
         right: -10px;
@@ -429,7 +406,6 @@ a.more:hover::before {
         font-size: 11px;
     }
     
-    /* Reduce gap further on smaller screens */
     #mainHeaderNav {
         gap: 6px;
     }
@@ -438,7 +414,6 @@ a.more:hover::before {
         margin-left: 4px;
     }
     
-    /* Make hamburger and search smaller */
     a.more {
         width: 28px;
         height: 28px;
@@ -461,7 +436,6 @@ a.more:hover::before {
         max-width: 200px;
     }
     
-    /* Even smaller icons for very small screens */
     .headerBtnItem img {
         width: 16px;
         height: 16px;
@@ -485,7 +459,6 @@ a.more:hover::before {
         margin-left: 3px;
     }
     
-    /* Hide "Профил" text on very small screens */
     #mainHeaderNav_profile_btn {
         font-size: 0;
     }

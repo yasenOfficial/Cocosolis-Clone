@@ -1,6 +1,4 @@
-/* -----------------------------------------------------------
-   FOOTER
------------------------------------------------------------ */
+/* FOOTER */
 
 footer {
     background-color: #816c65;
@@ -23,9 +21,7 @@ footer {
     padding: 60px 50px 30px;
 }
 
-/* -----------------------------------------------------------
-   1) PAYMENT METHODS SECTION
------------------------------------------------------------ */
+/*  PAYMENT METHODS SECTION */
 #footerContent_paymentMethods {
     text-align: center;
     padding-bottom: 40px;
@@ -63,9 +59,7 @@ footer {
     display: block;
 }
 
-/* -----------------------------------------------------------
-   2) MAIN FOOTER CONTENT (3 COLUMNS)
------------------------------------------------------------ */
+/* MAIN FOOTER CONTENT (3 COLS) */
 #footerContent_content {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
@@ -74,7 +68,7 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Column Headings */
+/* Cols Headings */
 #footerContent_content h5 {
     font-size: 16px;
     font-weight: 700;
@@ -83,9 +77,7 @@ footer {
     letter-spacing: 0.5px;
 }
 
-/* -----------------------------------------------------------
-   MENU COLUMN
------------------------------------------------------------ */
+/* MENU COLUMN */
 #footerContent_content_menu nav ul {
     list-style: none;
     padding: 0;
@@ -107,9 +99,7 @@ footer {
     opacity: 0.7;
 }
 
-/* -----------------------------------------------------------
-   NEWSLETTER COLUMN
------------------------------------------------------------ */
+/* NEWSLETTER COLUMN */
 #footerContent_content_newsletter {
     padding: 0 20px;
 }
@@ -216,9 +206,7 @@ footer {
     cursor: not-allowed;
 }
 
-/* -----------------------------------------------------------
-   SOCIAL MEDIA COLUMN
------------------------------------------------------------ */
+/* SOCIAL MEDIA COL */
 #footerContent_content_socialMedia ul {
     list-style: none;
     padding: 0;
@@ -252,9 +240,7 @@ footer {
     font-weight: 700;
 }
 
-/* -----------------------------------------------------------
-   COPYRIGHT
------------------------------------------------------------ */
+/* COPYRIGHT */
 #footerContent_copyright {
     text-align: center;
     padding: 25px 0 0;
@@ -262,9 +248,7 @@ footer {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* -----------------------------------------------------------
-   RESPONSIVE
------------------------------------------------------------ */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
     #footerContent {
@@ -420,12 +404,7 @@ footer {
     }
 }
 
-
-
-
-/* -----------------------------------------------------------
-   SOS PARTNERSHIP SECTION
------------------------------------------------------------ */
+/* SOS PARTNERSHIP SECTION */
 
 #sos_partnership {
     background: linear-gradient(to bottom, #00b4e6 0%, #00a3d7 100%);
@@ -467,9 +446,7 @@ footer {
     max-width: 600px;
 }
 
-/* -----------------------------------------------------------
-   RESPONSIVE
------------------------------------------------------------ */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
     #sos_partnership_container {

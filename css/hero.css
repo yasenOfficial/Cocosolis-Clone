@@ -1,6 +1,4 @@
-/* -----------------------------------------------------------
-   HERO SECTION - BLACK FRIDAY 2025
------------------------------------------------------------ */
+/* HERO SECTION - BLACK FRIDAY 2025 */
 
 .homeBanner {
     width: 100%;
@@ -68,7 +66,7 @@ body, #app, main {
     transform: translate(-50%, -50%);
 }
 
-/* Small Text (Pink Background) */
+/* Small Text */
 #homeBanner_black_friday_2025_small_text {
     background-color: #f89ca6;
     color: white;
@@ -127,9 +125,7 @@ body, #app, main {
     opacity: 0.8;
 }
 
-/* -----------------------------------------------------------
-   RESPONSIVE
------------------------------------------------------------ */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
     .homeBanner {

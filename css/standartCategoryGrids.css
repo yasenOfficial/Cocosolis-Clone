@@ -1,0 +1,334 @@
+/* -----------------------------------------------------------
+   STANDARD CATEGORY GRIDS (SKIN, HAIR, FACE, etc.)
+----------------------------------------------------------- */
+
+/* Section without extended attribute - standard products */
+.productListing_section_productsContainer:not([extended="true"]) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Single Product Card */
+.skin_singleProduct.singleProduct,
+.hair_singleProduct.singleProduct,
+.face_singleProduct.singleProduct,
+.self-tanner_singleProduct.singleProduct,
+.shimmer_singleProduct.singleProduct,
+.suntan-body_singleProduct.singleProduct,
+.spf_singleProduct.singleProduct {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skin_singleProduct.singleProduct:hover,
+.hair_singleProduct.singleProduct:hover,
+.face_singleProduct.singleProduct:hover,
+.self-tanner_singleProduct.singleProduct:hover,
+.shimmer_singleProduct.singleProduct:hover,
+.suntan-body_singleProduct.singleProduct:hover,
+.spf_singleProduct.singleProduct:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------------------------------------------------
+   FACE CATEGORY - Special Background Color
+----------------------------------------------------------- */
+
+/* Face category section background */
+.face_productListing_section {
+    background-color: #fbf1eb !important;
+    padding: 40px 0;
+}
+
+/* Face product cards keep white background */
+.face_singleProduct.singleProduct {
+    background: white;
+}
+
+/* -----------------------------------------------------------
+   BADGE ICON (Beauty Awards, etc.)
+----------------------------------------------------------- */
+
+.singleProduct_listing_iconsContainer {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Award Badge Image */
+.singleProduct_listing_iconsContainer_beautyAward {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+.singleProduct_listing_iconsContainer_beautyAward img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Improved Formula Badge */
+.singleProduct_listing_iconsContainer_improvedFormula {
+    display: block;
+    background-color: #c9a993;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px 8px;
+    line-height: 1.2;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    width: 60px;
+}
+
+/* Discount Badge */
+.singleProduct_listing_iconsContainer_discount {
+    display: block;
+    background-color: #3d3d3d;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    padding: 4px 10px;
+    border-radius: 3px;
+    width: 50px;
+}
+
+/* -----------------------------------------------------------
+   PRODUCT IMAGE CONTAINER
+----------------------------------------------------------- */
+
+.singleProduct_listing_imageContainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* 1:1 aspect ratio */
+    overflow: hidden;
+}
+
+.singleProduct_listing_imageContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -----------------------------------------------------------
+   REVIEWS/RATING SECTION
+----------------------------------------------------------- */
+
+.singleProduct_listing_reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.singleProduct_listing_reviews_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.singleProduct_listing_reviews_stars {
+    margin-right: 5px;
+}
+
+.reviewStars_icons {
+    display: flex;
+    gap: 2px;
+}
+
+.reviewStars_icons img {
+    width: 14px;
+    height: 14px;
+}
+
+.singleProduct_listing_reviews_count {
+    font-size: 12px;
+    color: #666;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -----------------------------------------------------------
+   PRODUCT VARIATIONS (110ML / 200ML buttons)
+----------------------------------------------------------- */
+
+/* Variations Container with prices and buttons side by side */
+.singleProduct_lising_variations {
+    display: flex;
+    gap: 15px;
+    padding: 0 15px 15px;
+    align-items: stretch;
+}
+
+.singleProduct_lising_variations_single {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.singleProduct_lising_variations_single_old {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.singleProduct_lising_variations_single_current {
+    font-weight: 700;
+    color: #816c65;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.singleProduct_lising_variations_single_price {
+    display: inline;
+}
+
+/* Variation buttons (110ML, 200ML) */
+.singleProduct_lising_variations .cocosolisAddToCartButton {
+    margin: 0;
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .productListing_section_productsContainer:not([extended="true"]) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .singleProduct_listing_iconsContainer_beautyAward {
+        width: 70px;
+        height: 70px;
+    }
+
+    .face_productListing_section {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .productListing_section_productsContainer:not([extended="true"]) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .reviewStars_icons img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .singleProduct_listing_reviews_count {
+        font-size: 11px;
+    }
+
+    .singleProduct_listing_iconsContainer {
+        top: 12px;
+        left: 12px;
+    }
+
+    .singleProduct_listing_iconsContainer_beautyAward {
+        width: 65px;
+        height: 65px;
+    }
+
+    .singleProduct_lising_variations {
+        gap: 12px;
+        padding: 0 12px 12px;
+    }
+
+    .singleProduct_lising_variations_single_current {
+        font-size: 15px;
+    }
+
+    .singleProduct_lising_variations .cocosolisAddToCartButton {
+        font-size: 12px;
+        padding: 11px 18px;
+    }
+
+    .face_productListing_section {
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .productListing_section_productsContainer:not([extended="true"]) {
+        gap: 25px;
+    }
+
+    .singleProduct_listing_reviews {
+        gap: 6px;
+        margin: 8px 0;
+    }
+
+    .reviewStars_icons img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .singleProduct_listing_reviews_count {
+        font-size: 10px;
+    }
+
+    .singleProduct_listing_iconsContainer {
+        top: 10px;
+        left: 10px;
+        gap: 8px;
+    }
+
+    .singleProduct_listing_iconsContainer_beautyAward {
+        width: 55px;
+        height: 55px;
+    }
+
+    .singleProduct_lising_variations {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px 10px;
+    }
+
+    .singleProduct_lising_variations_single_old {
+        font-size: 12px;
+    }
+
+    .singleProduct_lising_variations_single_current {
+        font-size: 14px;
+    }
+
+    .singleProduct_lising_variations .cocosolisAddToCartButton {
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .face_productListing_section {
+        padding: 20px 0;
+    }
+}

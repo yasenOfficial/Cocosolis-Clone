@@ -419,3 +419,131 @@ footer {
         padding-top: 15px;
     }
 }
+
+
+
+
+/* -----------------------------------------------------------
+   SOS PARTNERSHIP SECTION
+----------------------------------------------------------- */
+
+#sos_partnership {
+    background: linear-gradient(to bottom, #00b4e6 0%, #00a3d7 100%);
+    width: 100%;
+    padding: 30px 20px;
+}
+
+#sos_partnership_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#sos_partnership_logos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#sos_partnership_logo {
+    height: 60px;
+    width: auto;
+}
+
+#sos_partnership_goldenPartner {
+    height: 60px;
+    width: auto;
+}
+
+#sos_partnership_text {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    #sos_partnership_container {
+        gap: 30px;
+    }
+
+    #sos_partnership_logos {
+        gap: 20px;
+    }
+
+    #sos_partnership_logo,
+    #sos_partnership_goldenPartner {
+        height: 50px;
+    }
+
+    #sos_partnership_text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sos_partnership {
+        padding: 20px 5px;
+    }
+
+    #sos_partnership_container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 0;
+    }
+
+    #sos_partnership_logos {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #sos_partnership_logo,
+    #sos_partnership_goldenPartner {
+        height: 38px;
+        max-width: 45%;
+    }
+
+    #sos_partnership_text {
+        font-size: 12px;
+        padding: 0 8px;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    #sos_partnership {
+        padding: 15px 3px;
+    }
+
+    #sos_partnership_container {
+        gap: 12px;
+        padding: 0;
+    }
+
+    #sos_partnership_logos {
+        gap: 8px;
+    }
+
+    #sos_partnership_logo,
+    #sos_partnership_goldenPartner {
+        height: 32px;
+        max-width: 45%;
+    }
+
+    #sos_partnership_text {
+        font-size: 11px;
+        line-height: 1.4;
+        padding: 0 5px;
+    }
+}

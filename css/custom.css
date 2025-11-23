@@ -408,8 +408,8 @@ a.more:hover::before {
     }
     
     #mainLogoLink img {
-        height: 28px;
-        max-width: 110px;
+        height: 56px;
+        max-width: 220px;
     }
     
     #headerTicker {
@@ -450,8 +450,8 @@ a.more:hover::before {
     }
     
     #mainLogoLink img {
-        height: 24px;
-        max-width: 100px;
+        height: 48px;
+        max-width: 200px;
     }
     
     /* Even smaller icons for very small screens */

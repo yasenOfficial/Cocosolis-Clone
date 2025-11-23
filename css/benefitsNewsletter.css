@@ -1,0 +1,359 @@
+/* -----------------------------------------------------------
+   HOME BENEFITS SECTION
+----------------------------------------------------------- */
+
+#homeBenefits {
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+}
+
+#homeBenefits_left {
+    flex: 1;
+    background-color: #e8cfc4;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+#homeBenefits_right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#homeBenefits_right_backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Benefits Bullet Point */
+.homeBenefits_left_bullet {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.homeBenefits_left_bullet_iconHolder {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeBenefits_left_bullet_iconHolder_icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+.homeBenefits_left_bullet_text {
+    flex: 1;
+}
+
+.homeBenefits_left_bullet_text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5d4037;
+    margin: 0 0 10px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.homeBenefits_left_bullet_text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #6d4c41;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -----------------------------------------------------------
+   HOME NEWSLETTER SECTION
+----------------------------------------------------------- */
+
+#homeNewsletter {
+    background-color: #7d6e68;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletterSubscriptionForm {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.newsletterSubscriptionForm_cta {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.newsletterSubscriptionForm_cta_emph {
+    font-weight: 700;
+}
+
+.newsletterSubscriptionForm fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletterSubscriptionForm fieldset > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Email Input */
+.klaviyoSignupEmail {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    color: #333;
+}
+
+.klaviyoSignupEmail::placeholder {
+    color: #999;
+}
+
+.klaviyoSignupEmail:focus {
+    outline: 2px solid #a89080;
+}
+
+.klaviyoSignupEmailValidity {
+    display: none;
+}
+
+.newsletterSubscriptionForm_disclamer {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Checkbox */
+.csCheckbox {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.klaviyoSignupConsent {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.csCheckbox label {
+    flex: 1;
+    font-size: 13px;
+    line-height: 1.6;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+.csCheckbox label a {
+    color: white;
+    text-decoration: underline;
+}
+
+.csCheckbox label a:hover {
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE - TABLET
+----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    #homeBenefits {
+        min-height: 500px;
+    }
+
+    #homeBenefits_left {
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    .homeBenefits_left_bullet_iconHolder {
+        width: 55px;
+        height: 55px;
+    }
+
+    .homeBenefits_left_bullet_iconHolder_icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .homeBenefits_left_bullet_text h4 {
+        font-size: 18px;
+    }
+
+    .homeBenefits_left_bullet_text p {
+        font-size: 14px;
+    }
+
+    #homeNewsletter {
+        padding: 50px 20px;
+    }
+
+    .newsletterSubscriptionForm_cta {
+        font-size: 17px;
+    }
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE - MOBILE
+----------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #homeBenefits {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    #homeBenefits_left {
+        padding: 50px 30px;
+        gap: 35px;
+        order: 2;
+    }
+
+    #homeBenefits_right {
+        order: 1;
+        min-height: 400px;
+    }
+
+    .homeBenefits_left_bullet {
+        gap: 15px;
+    }
+
+    .homeBenefits_left_bullet_iconHolder {
+        width: 50px;
+        height: 50px;
+    }
+
+    .homeBenefits_left_bullet_iconHolder_icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .homeBenefits_left_bullet_text h4 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .homeBenefits_left_bullet_text p {
+        font-size: 13px;
+    }
+
+    #homeNewsletter {
+        padding: 40px 20px;
+    }
+
+    .newsletterSubscriptionForm {
+        gap: 25px;
+    }
+
+    .newsletterSubscriptionForm_cta {
+        font-size: 16px;
+    }
+
+    .klaviyoSignupEmail {
+        padding: 14px 18px;
+        font-size: 14px;
+    }
+
+    .csCheckbox label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #homeBenefits_left {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    #homeBenefits_right {
+        min-height: 300px;
+    }
+
+    .homeBenefits_left_bullet {
+        gap: 12px;
+    }
+
+    .homeBenefits_left_bullet_iconHolder {
+        width: 45px;
+        height: 45px;
+    }
+
+    .homeBenefits_left_bullet_iconHolder_icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .homeBenefits_left_bullet_text h4 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .homeBenefits_left_bullet_text p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    #homeNewsletter {
+        padding: 35px 15px;
+    }
+
+    .newsletterSubscriptionForm {
+        gap: 20px;
+    }
+
+    .newsletterSubscriptionForm_cta {
+        font-size: 15px;
+    }
+
+    .newsletterSubscriptionForm_disclamer {
+        font-size: 12px;
+    }
+
+    .klaviyoSignupEmail {
+        padding: 13px 16px;
+        font-size: 13px;
+    }
+
+    .klaviyoSignupConsent {
+        width: 18px;
+        height: 18px;
+    }
+
+    .csCheckbox label {
+        font-size: 11px;
+    }
+}

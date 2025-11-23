@@ -1,0 +1,638 @@
+/* -----------------------------------------------------------
+   REVIEWS SECTION
+----------------------------------------------------------- */
+
+#allReviews {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+}
+
+#allReviews_header {
+    font-size: clamp(24px, 3.4vw, 45px);
+    font-weight: 300;
+    color: #816c65;
+    text-align: center;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -----------------------------------------------------------
+   IMAGE SLIDER
+----------------------------------------------------------- */
+
+#allReviews_imageSlider {
+    margin-bottom: 50px;
+}
+
+.splide__track {
+    overflow: hidden;
+}
+
+.splide__list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.splide__slide {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.splide__slide:hover {
+    transform: scale(1.05);
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* -----------------------------------------------------------
+   REVIEWS STATS
+----------------------------------------------------------- */
+
+#allReviews_stats {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#allReviews_rating {
+    font-size: 60px;
+    font-weight: 300;
+    color: #816c65;
+    margin: 0 0 10px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+#allReviews_stars {
+    margin: 0 0 15px 0;
+}
+
+#allReviews_stars .reviewStars_icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#allReviews_stars .reviewStars_icons img {
+    width: 24px;
+    height: 24px;
+}
+
+#allReviews_counts {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -----------------------------------------------------------
+   REVIEWS CONTAINER - Single Column Layout
+----------------------------------------------------------- */
+
+#allReviews_container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* -----------------------------------------------------------
+   SINGLE REVIEW CARD
+----------------------------------------------------------- */
+
+.singleReview {
+    background: #f5f5f5;
+    border-radius: 0;
+    padding: 25px 35px;
+    display: flex;
+    gap: 20px;
+    box-shadow: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.singleReview:last-child {
+    border-bottom: none;
+}
+
+/* Review Thumbnail */
+.singleReview_thumb {
+    flex-shrink: 0;
+    position: relative;
+    align-self: flex-start;
+}
+
+.singleReview_thumb_initials {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d4b5a0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+.singleReview_thumb_verified {
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 22px;
+    height: 22px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #f5f5f5;
+}
+
+.singleReview_thumb_verified svg {
+    width: 11px;
+    height: 11px;
+}
+
+/* Review Content */
+.singleReview_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.singleReview_content_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.singleReview_content_top_names h6 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 4px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleReview_content_top_names p {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleReview_content_top_date p {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Review Stars */
+.singleReview_content_stars .reviewStars_icons {
+    display: flex;
+    gap: 3px;
+}
+
+.singleReview_content_stars .reviewStars_icons img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Review Text */
+.singleReview_content_text h6 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleReview_content_text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Review Images */
+.singleReview_content_images {
+    display: flex;
+    gap: 10px;
+}
+
+.singleReview_content_images img:not(.hidden) {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.singleReview_content_images img:not(.hidden):hover {
+    transform: scale(1.05);
+}
+
+.singleReview_content_images img.hidden {
+    display: none;
+}
+
+/* Related Product */
+.singleReview_related_product {
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.singleReview_related_product p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleReview_related_product a {
+    color: #a89080;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.singleReview_related_product a:hover {
+    text-decoration: underline;
+}
+
+/* Review Feedback - ALIGNED RIGHT */
+.singleReview_content_feedback {
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.singleReview_content_feedback > p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.singleReview_content_feedback_buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.singleReview_content_feedback_buttons_single_upvote,
+.singleReview_content_feedback_buttons_single_downvote {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.singleReview_content_feedback_buttons_single_upvote:hover {
+    background-color: #e8f5e9;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.singleReview_content_feedback_buttons_single_downvote:hover {
+    background-color: #ffebee;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.singleReview_content_feedback_buttons svg {
+    width: 14px;
+    height: 14px;
+}
+
+.singleReview_content_feedback_buttons_text {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -----------------------------------------------------------
+   PAGINATION
+----------------------------------------------------------- */
+
+#allReviews_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+#reviews__current_page {
+    display: none;
+}
+
+#allReviews_pagination_pages {
+    display: flex;
+    gap: 8px;
+}
+
+.allReviews_pagination_tab,
+.allReviews_pagination_currentTab {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.allReviews_pagination_tab {
+    background-color: white;
+    color: #666;
+}
+
+.allReviews_pagination_tab:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.allReviews_pagination_currentTab {
+    background-color: #a89080;
+    color: white;
+    cursor: default;
+}
+
+.allReviews_pagination_tab.arrowLeft,
+.allReviews_pagination_tab.arrowRight {
+    background-color: white;
+}
+
+.allReviews_pagination_tab.arrowRight img {
+    transform: rotate(180deg);
+}
+
+.allReviews_pagination_tab img {
+    width: 14px;
+    height: 14px;
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE - TABLET
+----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    #allReviews {
+        padding: 45px 20px;
+    }
+
+    #allReviews_header {
+        margin-bottom: 30px;
+    }
+
+    #allReviews_imageSlider {
+        margin-bottom: 35px;
+    }
+
+    .splide__slide {
+        width: 170px;
+        height: 170px;
+    }
+
+    #allReviews_rating {
+        font-size: 50px;
+    }
+
+    #allReviews_stats {
+        margin-bottom: 35px;
+    }
+
+    #allReviews_container {
+        max-width: 750px;
+        gap: 22px;
+    }
+
+    .singleReview {
+        padding: 22px 28px;
+    }
+
+    .singleReview_thumb_initials {
+        width: 55px;
+        height: 55px;
+        font-size: 17px;
+    }
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE - MOBILE
+----------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #allReviews {
+        padding: 35px 15px;
+    }
+
+    #allReviews_header {
+        margin-bottom: 25px;
+    }
+
+    #allReviews_imageSlider {
+        margin-bottom: 30px;
+    }
+
+    .splide__slide {
+        width: 140px;
+        height: 140px;
+    }
+
+    #allReviews_rating {
+        font-size: 42px;
+    }
+
+    #allReviews_stars .reviewStars_icons img {
+        width: 18px;
+        height: 18px;
+    }
+
+    #allReviews_counts {
+        font-size: 13px;
+    }
+
+    #allReviews_container {
+        gap: 20px;
+    }
+
+    .singleReview {
+        padding: 18px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .singleReview_thumb {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .singleReview_thumb_initials {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .singleReview_thumb_verified {
+        width: 18px;
+        height: 18px;
+        bottom: -3px;
+        left: -3px;
+    }
+
+    .singleReview_thumb_verified svg {
+        width: 9px;
+        height: 9px;
+    }
+
+    .singleReview_content_top {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .singleReview_content_text h6 {
+        font-size: 14px;
+    }
+
+    .singleReview_content_text p {
+        font-size: 13px;
+    }
+
+    .singleReview_content_images img:not(.hidden) {
+        width: 85px;
+        height: 85px;
+    }
+
+    .singleReview_content_feedback {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .singleReview_content_feedback_buttons {
+        gap: 10px;
+    }
+
+    .singleReview_content_feedback_buttons_single_upvote,
+    .singleReview_content_feedback_buttons_single_downvote {
+        padding: 7px 13px;
+    }
+
+    #allReviews_pagination {
+        margin-top: 35px;
+        gap: 7px;
+    }
+
+    .allReviews_pagination_tab,
+    .allReviews_pagination_currentTab {
+        width: 34px;
+        height: 34px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #allReviews {
+        padding: 30px 12px;
+    }
+
+    .splide__slide {
+        width: 110px;
+        height: 110px;
+    }
+
+    #allReviews_rating {
+        font-size: 38px;
+    }
+
+    #allReviews_counts {
+        font-size: 12px;
+    }
+
+    .singleReview {
+        padding: 15px;
+    }
+
+    .singleReview_thumb_initials {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .singleReview_content_top_names h6 {
+        font-size: 14px;
+    }
+
+    .singleReview_content_top_names p,
+    .singleReview_content_top_date p {
+        font-size: 11px;
+    }
+
+    .singleReview_content_text h6 {
+        font-size: 13px;
+    }
+
+    .singleReview_content_text p {
+        font-size: 12px;
+    }
+
+    .singleReview_content_images img:not(.hidden) {
+        width: 75px;
+        height: 75px;
+    }
+
+    .singleReview_related_product p {
+        font-size: 12px;
+    }
+
+    .singleReview_content_feedback > p {
+        font-size: 12px;
+    }
+
+    .singleReview_content_feedback_buttons_text {
+        font-size: 12px;
+    }
+
+    #allReviews_pagination_pages {
+        gap: 5px;
+    }
+
+    .allReviews_pagination_tab,
+    .allReviews_pagination_currentTab {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+}

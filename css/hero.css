@@ -1,0 +1,238 @@
+/* -----------------------------------------------------------
+   HERO SECTION - BLACK FRIDAY 2025
+----------------------------------------------------------- */
+
+.homeBanner {
+    width: 100%;
+    background-color: #d4c4bd;
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+    margin-top: 0 !important;
+    order: -1; /* Push hero to the top */
+}
+
+/* Force hero to be first if parent is flex */
+body, #app, main {
+    display: flex;
+    flex-direction: column;
+}
+
+.homeBanner {
+    order: -999 !important;
+}
+
+#homeBanner_black_friday_2025_container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+/* Image Container */
+#homeBanner_black_friday_2025_image_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.homeBanner_black_friday_2025_image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.homeBanner_black_friday_2025_image_first {
+    position: relative;
+    z-index: 1;
+}
+
+.homeBanner_black_friday_2025_image_second {
+    position: absolute;
+    z-index: 2;
+    max-width: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Small Text (Pink Background) */
+#homeBanner_black_friday_2025_small_text {
+    background-color: #f89ca6;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Button */
+.homeBanner_container_button {
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 18px 60px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+}
+
+.homeBanner_container_button:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Terms Footer */
+.homeBanner_terms {
+    display: none !important; /* Hidden for now */
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 13px;
+    padding: 15px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.homeBanner_terms a {
+    color: white;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.homeBanner_terms a:hover {
+    opacity: 0.8;
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .homeBanner {
+        padding: 60px 20px 20px;
+        min-height: 500px;
+    }
+
+    #homeBanner_black_friday_2025_container {
+        gap: 25px;
+    }
+
+    .homeBanner_black_friday_2025_image_second {
+        max-width: 280px;
+    }
+
+    #homeBanner_black_friday_2025_small_text {
+        font-size: 16px;
+        padding: 10px 35px;
+    }
+
+    .homeBanner_container_button {
+        font-size: 16px;
+        padding: 16px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .homeBanner {
+        padding: 40px 5px 15px;
+        min-height: 400px;
+    }
+
+    #homeBanner_black_friday_2025_container {
+        gap: 18px;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    #homeBanner_black_friday_2025_image_container {
+        padding: 0;
+        max-width: 95%;
+    }
+
+    .homeBanner_black_friday_2025_image {
+        max-width: 100%;
+    }
+
+    .homeBanner_black_friday_2025_image_second {
+        max-width: 180px;
+    }
+
+    #homeBanner_black_friday_2025_small_text {
+        font-size: 12px;
+        padding: 9px 22px;
+        letter-spacing: 0.4px;
+    }
+
+    .homeBanner_container_button {
+        font-size: 14px;
+        padding: 13px 38px;
+        letter-spacing: 0.8px;
+    }
+
+    .homeBanner_terms {
+        font-size: 12px;
+        padding: 12px 15px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeBanner {
+        padding: 25px 0 10px;
+        min-height: 350px;
+    }
+
+    #homeBanner_black_friday_2025_container {
+        gap: 12px;
+        padding: 0;
+    }
+
+    #homeBanner_black_friday_2025_image_container {
+        padding: 0;
+        max-width: 95%;
+    }
+
+    .homeBanner_black_friday_2025_image_second {
+        max-width: 145px;
+    }
+
+    #homeBanner_black_friday_2025_small_text {
+        font-size: 10px;
+        padding: 7px 14px;
+    }
+
+    .homeBanner_container_button {
+        font-size: 12px;
+        padding: 11px 28px;
+    }
+
+    .homeBanner_terms {
+        font-size: 10px;
+        padding: 10px;
+        margin-top: 18px;
+    }
+}

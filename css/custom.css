@@ -346,10 +346,11 @@ a.more:hover::before {
         order: 2;
     }
     
-    /* Cart in the middle-right */
+    /* Cart and Profile on the right */
     #mainHeaderNav_cart {
         order: 3;
         margin-left: auto;
+        margin-right: 8px;
     }
     
     /* Profile on the far right */
@@ -398,6 +399,12 @@ a.more:hover::before {
     
     .headerBtnHolder {
         margin-left: 8px;
+    }
+    
+    /* Cart quantity badge - overlap more */
+    #mainHeaderNav_cart_btn_quantity {
+        top: -6px;
+        right: -10px;
     }
 }
 

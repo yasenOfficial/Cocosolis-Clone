@@ -1,0 +1,421 @@
+/* -----------------------------------------------------------
+   FOOTER
+----------------------------------------------------------- */
+
+footer {
+    background-color: #816c65;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+}
+
+/* Minicart (hidden by default) */
+#minicartOverlay,
+#minicartWrapper,
+#minicart {
+    display: none;
+}
+
+/* Footer Content Container */
+#footerContent {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 50px 30px;
+}
+
+/* -----------------------------------------------------------
+   1) PAYMENT METHODS SECTION
+----------------------------------------------------------- */
+#footerContent_paymentMethods {
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#footerContent_paymentMethods h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+    text-transform: none;
+    letter-spacing: 0.3px;
+}
+
+#footerContent_paymentMethods_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#footerContent_paymentMethods_list picture {
+    background: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerContent_paymentMethods_list img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
+/* -----------------------------------------------------------
+   2) MAIN FOOTER CONTENT (3 COLUMNS)
+----------------------------------------------------------- */
+#footerContent_content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 50px;
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Column Headings */
+#footerContent_content h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* -----------------------------------------------------------
+   MENU COLUMN
+----------------------------------------------------------- */
+#footerContent_content_menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerContent_content_menu_item a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+}
+
+.footerContent_content_menu_item a:hover {
+    opacity: 0.7;
+}
+
+/* -----------------------------------------------------------
+   NEWSLETTER COLUMN
+----------------------------------------------------------- */
+#footerContent_content_newsletter {
+    padding: 0 20px;
+}
+
+.newsletterSubscriptionForm_cta {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.newsletterSubscriptionForm_cta_emph {
+    font-weight: 700;
+}
+
+.newsletterSubscriptionForm fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Email Input */
+.klaviyoSignupEmail {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.klaviyoSignupEmail::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.klaviyoSignupEmail:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.newsletterSubscriptionForm_disclamer {
+    display: block;
+    font-size: 11px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Checkbox */
+.csCheckbox {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.csCheckbox input[type="checkbox"] {
+    margin-top: 3px;
+    cursor: pointer;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.csCheckbox label {
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.csCheckbox label a {
+    color: white;
+    text-decoration: underline;
+}
+
+.csCheckbox label a:hover {
+    opacity: 0.8;
+}
+
+/* Submit Button */
+.klaviyoSignupSubmit {
+    width: 100%;
+    padding: 14px 30px;
+    background: #c4a995;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.klaviyoSignupSubmit:not(:disabled):hover {
+    background: #b39985;
+    transform: translateY(-2px);
+}
+
+.klaviyoSignupSubmit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* -----------------------------------------------------------
+   SOCIAL MEDIA COLUMN
+----------------------------------------------------------- */
+#footerContent_content_socialMedia ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+#footerContent_content_socialMedia ul li a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#footerContent_content_socialMedia ul li a:hover {
+    transform: translateY(-3px);
+}
+
+.socialMediaIcon {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.footerContent_content_socialMedia_cta {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footerContent_content_socialMedia_cta strong {
+    font-weight: 700;
+}
+
+/* -----------------------------------------------------------
+   COPYRIGHT
+----------------------------------------------------------- */
+#footerContent_copyright {
+    text-align: center;
+    padding: 25px 0 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    #footerContent {
+        padding: 50px 30px 25px;
+    }
+
+    #footerContent_content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 0;
+    }
+
+    #footerContent_content_newsletter {
+        padding: 0;
+    }
+
+    #footerContent_paymentMethods_list {
+        gap: 12px;
+    }
+
+    #footerContent_paymentMethods_list img {
+        height: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    #footerContent {
+        padding: 40px 20px 20px;
+    }
+
+    #footerContent_paymentMethods h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #footerContent_paymentMethods_list {
+        gap: 10px;
+    }
+
+    #footerContent_paymentMethods_list picture {
+        padding: 6px 10px;
+    }
+
+    #footerContent_paymentMethods_list img {
+        height: 24px;
+    }
+
+    #footerContent_content {
+        gap: 35px;
+        padding: 35px 0;
+    }
+
+    #footerContent_content h5 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footerContent_content_menu_item a {
+        font-size: 13px;
+    }
+
+    .newsletterSubscriptionForm_cta {
+        font-size: 13px;
+    }
+
+    .socialMediaIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+    #footerContent_copyright {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #footerContent {
+        padding: 30px 15px 15px;
+    }
+
+    #footerContent_paymentMethods {
+        padding-bottom: 30px;
+    }
+
+    #footerContent_paymentMethods h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    #footerContent_paymentMethods_list {
+        gap: 8px;
+    }
+
+    #footerContent_paymentMethods_list picture {
+        padding: 5px 8px;
+    }
+
+    #footerContent_paymentMethods_list img {
+        height: 20px;
+    }
+
+    #footerContent_content {
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    #footerContent_content h5 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .footerContent_content_menu_item a {
+        font-size: 12px;
+    }
+
+    .newsletterSubscriptionForm_cta {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .klaviyoSignupEmail {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .klaviyoSignupSubmit {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+
+    .csCheckbox label {
+        font-size: 11px;
+    }
+
+    #footerContent_content_socialMedia ul {
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .socialMediaIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footerContent_content_socialMedia_cta {
+        font-size: 12px;
+    }
+
+    #footerContent_copyright {
+        font-size: 11px;
+        padding-top: 15px;
+    }
+}

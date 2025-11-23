@@ -1,6 +1,4 @@
-/* -----------------------------------------------------------
-   REVIEWS SECTION
------------------------------------------------------------ */
+/*REVIEWS SECTION */
 
 #allReviews {
     background-color: #f5f5f5;
@@ -18,9 +16,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* -----------------------------------------------------------
-   IMAGE SLIDER
------------------------------------------------------------ */
+/*  IMAGE SLIDER*/
 
 #allReviews_imageSlider {
     margin-bottom: 50px;
@@ -57,9 +53,7 @@
     border-radius: 8px;
 }
 
-/* -----------------------------------------------------------
-   REVIEWS STATS
------------------------------------------------------------ */
+/* REVIEWS STATS */
 
 #allReviews_stats {
     text-align: center;
@@ -96,9 +90,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* -----------------------------------------------------------
-   REVIEWS CONTAINER - Single Column Layout
------------------------------------------------------------ */
+/* REVIEWS CONTAINER - Single COL Layout */
 
 #allReviews_container {
     max-width: 900px;
@@ -108,9 +100,7 @@
     gap: 25px;
 }
 
-/* -----------------------------------------------------------
-   SINGLE REVIEW CARD
------------------------------------------------------------ */
+/* SINGLE REVIEW CARD */
 
 .singleReview {
     background: #f5f5f5;
@@ -335,9 +325,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* -----------------------------------------------------------
-   PAGINATION
------------------------------------------------------------ */
+/* PAGINATION*/
 
 #allReviews_pagination {
     display: flex;
@@ -402,9 +390,7 @@
     height: 14px;
 }
 
-/* -----------------------------------------------------------
-   RESPONSIVE - TABLET
------------------------------------------------------------ */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
     #allReviews {
@@ -447,10 +433,6 @@
         font-size: 17px;
     }
 }
-
-/* -----------------------------------------------------------
-   RESPONSIVE - MOBILE
------------------------------------------------------------ */
 
 @media (max-width: 768px) {
     #allReviews {

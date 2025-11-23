@@ -1,6 +1,4 @@
-/* -----------------------------------------------------------
-   HOME BENEFITS SECTION
------------------------------------------------------------ */
+/* HOME BENEFITS SECTION */
 
 #homeBenefits {
     display: flex;
@@ -75,9 +73,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* -----------------------------------------------------------
-   HOME NEWSLETTER SECTION
------------------------------------------------------------ */
+/* HOME NEWSLETTER SECTION*/
 
 #homeNewsletter {
     background-color: #7d6e68;
@@ -186,9 +182,7 @@
     text-decoration: none;
 }
 
-/* -----------------------------------------------------------
-   RESPONSIVE - TABLET
------------------------------------------------------------ */
+/* RESPONSIVE*/
 
 @media (max-width: 1024px) {
     #homeBenefits {
@@ -226,10 +220,6 @@
         font-size: 17px;
     }
 }
-
-/* -----------------------------------------------------------
-   RESPONSIVE - MOBILE
------------------------------------------------------------ */
 
 @media (max-width: 768px) {
     #homeBenefits {

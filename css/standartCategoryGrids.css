@@ -1,8 +1,6 @@
-/* -----------------------------------------------------------
-   STANDARD CATEGORY GRIDS (SKIN, HAIR, FACE, etc.)
------------------------------------------------------------ */
+/* STANDARD CATEGORY GRIDS (SKIN, HAIR, FACE, etc.)*/
 
-/* Section without extended attribute - standard products */
+/* Sectionstandard products */
 .productListing_section_productsContainer:not([extended="true"]) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -35,17 +33,13 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* -----------------------------------------------------------
-   FACE CATEGORY - Special Background Color
------------------------------------------------------------ */
+/* FACE CATEGORY - Special Background Color */
 
-/* Face category section background */
 #face {
     background-color: #fff2ef;
     padding: 60px 0;
 }
 
-/* Face product cards - same background as section */
 .face_singleProduct.singleProduct {
     background: #fff2ef;
 }
@@ -59,9 +53,7 @@
     border-radius: 0;
 }
 
-/* -----------------------------------------------------------
-   BADGE ICON (Beauty Awards, etc.)
------------------------------------------------------------ */
+/* BADGE ICON (Beauty Awards, etc.)*/
 
 .singleProduct_listing_iconsContainer {
     position: absolute;
@@ -87,7 +79,7 @@
     object-fit: contain;
 }
 
-/* Improved Formula Badge */
+/* Formula Badge */
 .singleProduct_listing_iconsContainer_improvedFormula {
     display: block;
     background-color: #c9a993;
@@ -118,9 +110,7 @@
     min-width: 50px;
 }
 
-/* -----------------------------------------------------------
-   PRODUCT IMAGE AND HEADER
------------------------------------------------------------ */
+/*   PRODUCT IMAGE AND HEADER*/
 
 .singleProduct_listing_header {
     position: relative;
@@ -154,9 +144,7 @@
     object-fit: contain;
 }
 
-/* -----------------------------------------------------------
-   REVIEWS/RATING SECTION
------------------------------------------------------------ */
+/* REVIEWS/RATING SECTION*/
 
 .singleProduct_listing_reviews {
     display: flex;
@@ -192,9 +180,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* -----------------------------------------------------------
+/* 
    PRODUCT INFO SECTION
------------------------------------------------------------ */
+ */
 
 .singleProduct_listing_infos {
     padding: 15px;
@@ -223,9 +211,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* -----------------------------------------------------------
+/* 
    PRICE SECTION
------------------------------------------------------------ */
+ */
 
 .singleProduct_listing_priceHolder {
     padding: 0 15px 15px;
@@ -277,9 +265,7 @@
     font-style: normal;
 }
 
-/* -----------------------------------------------------------
-   PRODUCT VARIATIONS (110ML / 200ML buttons)
------------------------------------------------------------ */
+/*  PRODUCT VARIATIONS (110ML / 200ML buttons) */
 
 /* Variations Container with prices and buttons side by side */
 .singleProduct_lising_variations {
@@ -326,7 +312,7 @@
     white-space: nowrap;
 }
 
-/* Add to Cart Button */
+/* Add to Cart BTN */
 .cocosolisAddToCartButton {
     background-color: #a89080;
     color: white;
@@ -345,9 +331,9 @@
     background-color: #968070;
 }
 
-/* -----------------------------------------------------------
+/* 
    RESPONSIVE
------------------------------------------------------------ */
+ */
 
 @media (max-width: 1024px) {
     .productListing_section_productsContainer:not([extended="true"]) {
@@ -584,10 +570,6 @@
 }
 
 
-/* -----------------------------------------------------------
-   SPF CATEGORY - Special Layout for 2 Products
------------------------------------------------------------ */
-
 /* SPF category section background */
 #spf {
     background-color: #fbf1eb;
@@ -613,9 +595,9 @@
     max-width: 400px;
 }
 
-/* -----------------------------------------------------------
+/* 
    RESPONSIVE FOR SPF CATEGORY
------------------------------------------------------------ */
+ */
 
 @media (max-width: 1024px) {
     #spf {
